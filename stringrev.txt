@@ -1,0 +1,11 @@
+-module(stringrev).
+-compile(export_all).
+
+        oof(String)->
+                foo(String,[]).
+
+        foo([],UString)->
+                UString;
+
+        foo([H|String],UString)->
+                foo(String,[H|UString]).
